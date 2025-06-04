@@ -47,7 +47,9 @@ last = 'Doe'
 message = first + ' [' + last + '] is a coder' # string concatenation
 print(message)
 msg = f'{first} [{last}] is a coder' # formatted string
+msg2 = "{}, {}"
 print(msg)
+print(msg2.format(first, last))
 
 first_name = "Johan"
 last_name = "Smith"
