@@ -11,6 +11,10 @@ class Cat(Mammal):
     def purr(self):
         print("purr")
 
+    # Override
+    def walk(self):
+        print("walk sneakily")
+
 
 dog1 = Dog()
 dog1.walk()
