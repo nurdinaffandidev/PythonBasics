@@ -66,12 +66,27 @@ print(f"text = {txt}")
 print(f"result = {x}", end="\n\n")
 
 # '.':
-print("'.': #Search for a sequence that starts with \"he\", followed by two (any) characters, and an \"o\"")
+print("'.': Search for a sequence that starts with \"he\", followed by two (any) characters, and an \"o\"")
 print("======================================================================")
 txt = "hello planet, this is tutorial hell"
 x = re.findall(r"he..o", txt)
 print(f"text = {txt}")
 print(f"result = {x}", end="\n\n")
+
+# '^':
+print("'^': Check if the string starts with \"hello\"")
+print("======================================================================")
+txt = "hello planet"
+x = re.findall("^hello", txt)
+print(f"text = {txt}")
+print(f"result = {x}")
+print(f"\"{txt}\" starts with \"hello\"? = {True if x else False}", end="\n\n")
+
+txt = "hey planet"
+x = re.findall("^hello", txt)
+print(f"text = {txt}")
+print(f"result = {x}")
+print(f"\"{txt}\" starts with \"hello\"? = {True if x else False}", end="\n\n")
 
 # '$':
 print("'$': Check if the string ends with 'planet'")
