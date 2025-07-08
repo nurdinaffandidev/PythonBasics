@@ -34,13 +34,13 @@ print("----- Parameters finish -----")
 # ================================================
 # Keyword arguments:
 print("\n----- Keyword arguments start -----")
-greet_user_two_params(last_name="Smith", first_name="John") # this is an example of positional arguments
+greet_user_two_params(last_name="Smith", first_name="John") # this is an example of keyword arguments
 '''
 Note: 
 cannot have keyword arg followed by positional arg,
 but can have positional arg followed by keyword arg.
 '''
-## greet_user_two_params(first_name="John", "Smith") #python complains
+## greet_user_two_params(first_name="John", "Smith") #python complains, cannot have keyword arg followed by positional arg
 greet_user_two_params("John", last_name="Smith") #can have positional arg followed by keyword arg
 
 # for numerical params, use keyword arguments to improve readability
