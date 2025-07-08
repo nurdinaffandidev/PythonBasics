@@ -89,5 +89,5 @@ digits_mapping = {
 
 output_string = ""
 for char in phone:
-    output_string += digits_mapping.get(char, "!") + " "
+    output_string += digits_mapping.get(char, "Number not found!") + " "
 print(output_string)
