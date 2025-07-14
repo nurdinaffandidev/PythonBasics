@@ -146,3 +146,13 @@ print(f"after matrix[0][1] change = {matrix[0][1]}")
 
 for row in matrix:
     print(row)
+
+# swapping within list
+print("\nSwapping within list:")
+print("==============================")
+num_list = [0, 1, 2, 3, 4, 5]
+print(f"original list: {num_list}")
+num_list[0], num_list[-1] = num_list[-1], num_list[0]
+num_list[1], num_list[-2] = num_list[-2], num_list[1]
+num_list[2], num_list[-3] = num_list[-3], num_list[2]
+print(num_list)
