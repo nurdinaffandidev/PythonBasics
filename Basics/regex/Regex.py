@@ -34,7 +34,7 @@ print("search, no match:")
 print("=========================")
 txt = "The rain in Spain"
 x = re.search("Portugal", txt)
-print(x)
+print(x, end="\n\n")
 
 # split (similar to string split): returns a list where the string has been split at each match
 print("split:")
