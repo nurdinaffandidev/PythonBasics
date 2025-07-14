@@ -156,3 +156,11 @@ num_list[0], num_list[-1] = num_list[-1], num_list[0]
 num_list[1], num_list[-2] = num_list[-2], num_list[1]
 num_list[2], num_list[-3] = num_list[-3], num_list[2]
 print(num_list)
+
+# Flatten nested list
+print("\nFlatten nested list:")
+print("==============================")
+nested = [[1, 2], [3, 4], [5, 6]]
+flattened = [item for sublist in nested for item in sublist]
+print(f"nested: {nested}")
+print(f"flattened: {flattened}")
