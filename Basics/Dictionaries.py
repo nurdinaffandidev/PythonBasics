@@ -78,7 +78,9 @@ for key, value in customer.items():
     print(f"key= {key} : value={value}")
 
 # Exercise: Print out input int value to literal word
-phone = input("\nEnter a number: ")
+print("\nExercise: Print out input int value to literal word:")
+# phone = input("\nEnter a number: ") # uncomment to use input
+phone = "12" # comment out to use input
 digits_mapping = {
     "1": "One",
     "2": "Two",
@@ -91,3 +93,19 @@ output_string = ""
 for char in phone:
     output_string += digits_mapping.get(char, "Number not found!") + " "
 print(output_string)
+
+
+# default dict
+from collections import defaultdict
+print("\ndefaultdict:")
+normal_dict = {}
+# normal_dict["a"].append(1)  # ❌ KeyError if "a" doesn't exist, need do extra checks
+key = "a"
+if key not in normal_dict:
+    normal_dict[key] = []
+normal_dict["a"].append(1)
+print(normal_dict)
+
+default_dict = defaultdict(list)
+default_dict["a"].append(1)  # ✅ No error; "a" is initialized to []
+print(default_dict)
