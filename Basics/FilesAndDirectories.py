@@ -1,5 +1,5 @@
 from pathlib import Path
-'''
+r'''
  Absolute path:
  c:\ Program Files\Microsoft (microsoft)
  /usr/local/bin (linux/macOS)
@@ -8,9 +8,8 @@ from pathlib import Path
  path starting from current directory
 '''
 path = Path()
-print(path.absolute())
-print(path.exists())
-print()
+print(f"absolute path = {path.absolute()}")
+print(f"path exists = {path.exists()}\n")
 
 path1 = Path("emails")
 # path1.mkdir()
