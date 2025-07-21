@@ -56,8 +56,8 @@ print("----- Keyword arguments finish -----")
 print("\n----- *args, **kwargs start -----")
 # *args, **kwargs: allowing us to accept an arbitrary number of positional/keyword arguments
 def student_info(*args, **kwargs):
-    print(args)
-    print(kwargs)
+    print(f"{args}, type: {type(args)}")
+    print(f"{kwargs}, type: {type(kwargs)}")
 
 print("\ndirect passing of *args, **kwargs:")
 student_info('Math', 'Art', name='John', age=22)
