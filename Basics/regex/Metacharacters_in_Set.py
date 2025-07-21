@@ -120,6 +120,6 @@ print(f"text = {txt}")
 print(f"result = {x}", end="\n\n")
 
 txt = "c*d+e"
-x = re.findall(r"[a-z*]", txt)
+x = re.findall(r"[a-z*+]", txt)
 print(f"text = {txt}")
 print(f"result = {x}", end="\n\n")
