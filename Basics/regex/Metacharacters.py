@@ -94,6 +94,7 @@ print("======================================================================")
 txt = "hello planet"
 x = re.findall(r"planet$", txt)
 print(f"text = {txt}")
+print(f"result = {x}")
 print(f"\"{txt}\" ends with 'planet'? = {True if x else False}", end="\n\n")
 
 # '*':
@@ -164,14 +165,17 @@ print("======================================================================")
 txt = "The rain in Spain falls mainly in the plain!"
 x = re.findall(r"falls|stays", txt)
 print(f"text = {txt}")
+print(f"result = {x}")
 print(f"text contains \"falls\" or \"stays\"? = {True if x else False}", end="\n\n")
 
 txt = "The rain in Spain stays in the plain!"
 x = re.findall(r"falls|stays", txt)
 print(f"text = {txt}")
+print(f"result = {x}")
 print(f"text contains \"falls\" or \"stays\"? = {True if x else False}", end="\n\n")
 
 txt = "The rain in Spain is heavy!"
 x = re.findall(r"falls|stays", txt)
 print(f"text = {txt}")
+print(f"result = {x}")
 print(f"text contains \"falls\" or \"stays\"? = {True if x else False}", end="\n\n")
