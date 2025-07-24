@@ -155,7 +155,12 @@ print(f"original list: {num_list}")
 num_list[0], num_list[-1] = num_list[-1], num_list[0]
 num_list[1], num_list[-2] = num_list[-2], num_list[1]
 num_list[2], num_list[-3] = num_list[-3], num_list[2]
-print(num_list)
+print(f"swapped list: {num_list}")
+num_list = [1, 2]
+print(f"original list: {num_list}")
+num_list[0], num_list[1] = num_list[1], num_list[0]
+print(f"swapped list: {num_list}")
+
 
 # Flatten nested list
 print("\nFlatten nested list:")
